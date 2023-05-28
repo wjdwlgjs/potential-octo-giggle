@@ -35,3 +35,16 @@ class macbook extends laptop {
         /* ellipse(x + size * 0.8, y + size * 0.3, 0.666 * size, 0.1 * size); */
     }
 }
+class samsung extends laptop{
+    samsung(float init_size, float init_x, float init_y) {
+        super(init_size, init_x, init_y);
+    }
+    
+    void render() {
+        super.render();
+        fill(0);
+        textSize(size/10);
+        textAlign(CENTER, CENTER);
+        text("SAMSUNG", x+0.8*size,y+0.45*size);
+    }
+}
